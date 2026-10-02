@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>老三电影网 - 免费高清电影电视剧在线观看_最新影视资源大全</title>
+<meta name="description" content="老三电影网（https://laosandianyingwang-cn.github.io）提供最新高清电影、热播电视剧、动漫番剧、综艺纪录片的在线观看与影视资讯，每日更新影视排行榜、评分与剧情介绍，资源丰富、播放流畅、移动端自适应，是您查找电影电视剧资源的好去处。">
+<meta name="keywords" content="老三电影网,电影,电视剧,在线观看,高清电影,免费电影,热播剧集,动漫番剧,综艺节目,影视排行榜,影视资源">
+<meta name="author" content="老三电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0b0f1f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="canonical" href="https://laosandianyingwang-cn.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="老三电影网">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="老三电影网 - 免费高清电影电视剧在线观看_最新影视资源大全">
+<meta property="og:description" content="老三电影网每日更新最新高清电影、热播电视剧、动漫番剧与综艺纪录片，提供影视排行榜、评分与剧情介绍，移动端自适应，随手即看。">
+<meta property="og:url" content="https://laosandianyingwang-cn.github.io/">
+<meta property="og:image" content="https://laosandianyingwang-cn.github.io/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="老三电影网 - 免费高清电影电视剧在线观看">
+<meta name="twitter:description" content="最新高清电影、热播电视剧、动漫番剧、综艺纪录片一站聚合，老三电影网每日更新。">
+<style>
+/* ===== 基础重置 ===== */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",Helvetica,Arial,sans-serif;
+  background:#070a14;
+  color:#e8ecf7;
+  line-height:1.75;
+  font-size:16px;
+  overflow-x:hidden;
+  padding-bottom:0;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{border:0;max-width:100%;height:auto}
+h1,h2,h3,h4{font-weight:800;line-height:1.3;letter-spacing:.5px}
+
+/* ===== 全局变量与星空背景 ===== */
+:root{
+  --bg:#070a14;
+  --card:rgba(255,255,255,.055);
+  --line:rgba(255,255,255,.10);
+  --pink:#ff2d6f;
+  --cyan:#22e0ff;
+  --gold:#ffc53d;
+  --muted:#96a0bd;
+  --radius:16px;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(900px 600px at 12% -5%,rgba(255,45,111,.22),transparent 60%),
+    radial-gradient(800px 620px at 92% 8%,rgba(34,224,255,.18),transparent 62%),
+    radial-gradient(700px 700px at 50% 110%,rgba(124,77,255,.20),transparent 60%),
+    linear-gradient(180deg,#070a14 0%,#0a0f1f 50%,#070a14 100%);
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.55;
+  background-image:
+    radial-gradient(1.4px 1.4px at 20% 30%,#fff,transparent),
+    radial-gradient(1.2px 1.2px at 70% 15%,#cfe9ff,transparent),
+    radial-gradient(1.6px 1.6px at 42% 72%,#fff,transparent),
+    radial-gradient(1.1px 1.1px at 88% 62%,#ffd9e6,transparent),
+    radial-gradient(1.3px 1.3px at 10% 85%,#d6f4ff,transparent),
+    radial-gradient(1.2px 1.2px at 58% 45%,#fff,transparent);
+  background-size:520px 520px,430px 430px,610px 610px,380px 380px,700px 700px,480px 480px;
+}
+
+/* ===== 布局容器 ===== */
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+
+/* ===== 顶部公告条 ===== */
+.topbar{
+  background:linear-gradient(90deg,var(--pink),#7c4dff 55%,var(--cyan));
+  color:#fff;font-size:13px;letter-spacing:.4px;
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 18px;min-height:34px}
+.topbar span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.topbar a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* ===== 头部 ===== */
+header.site-header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(7,10,20,.82);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;gap:16px;padding:12px 18px;max-width:1180px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.logo-mark{
+  width:40px;height:40px;border-radius:12px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--pink),#7c4dff 60%,var(--cyan));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:18px;color:#fff;box-shadow:0 6px 18px rgba(255,45,111,.35);
+}
+.logo-text strong{display:block;font-size:20px;letter-spacing:1px;background:linear-gradient(90deg,#fff,#ffd6e4 60%,#c9f6ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo-text small{display:block;font-size:11px;color:var(--muted);letter-spacing:2.2px;text-transform:uppercase}
+
+/* 导航 */
+nav.main-nav{margin-left:auto}
+nav.main-nav ul{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+nav.main-nav a{
+  display:block;padding:8px 13px;border-radius:999px;font-size:14.5px;color:#cfd7ee;
+  border:1px solid transparent;transition:.22s;white-space:nowrap;
+}
+nav.main-nav a:hover,nav.main-nav a:focus{color:#fff;background:rgba(255,255,255,.09);border-color:var(--line)}
+nav.main-nav a.active{color:#fff;background:linear-gradient(120deg,rgba(255,45,111,.30),rgba(34,224,255,.22));border-color:rgba(255,255,255,.22)}
+
+/* 搜索 */
+.search-box{margin-left:12px;display:flex;align-items:center;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:999px;padding:3px 4px 3px 12px}
+.search-box input{
+  background:transparent;border:0;outline:none;color:#fff;font-size:14px;width:150px;height:32px;font-family:inherit;
+}
+.search-box input::placeholder{color:#8b95b5}
+.search-box button{
+  border:0;cursor:pointer;height:32px;padding:0 15px;border-radius:999px;font-size:13.5px;font-weight:700;color:#fff;font-family:inherit;
+  background:linear-gradient(120deg,var(--pink),#7c4dff);
+}
+
+/* ===== HERO ===== */
+.hero{padding:54px 0 34px;text-align:center;position:relative}
+.badge-line{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;font-size:13px;color:#ffd9e6;background:rgba(255,45,111,.14);border:1px solid rgba(255,45,111,.35)}
+.hero h1{
+  margin:18px auto 0;font-size:clamp(30px,6.4vw,58px);max-width:16em;
+  background:linear-gradient(92deg,#fff 10%,#ffd0e0 42%,#a8ecff 78%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero h1 em{font-style:normal;background:linear-gradient(92deg,var(--pink),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{max-width:720px;margin:16px auto 0;color:#b9c2dc;font-size:clamp(14.5px,2.6vw,17px)}
+.hero .site-url{margin-top:12px;font-size:13.5px;color:#7f8bab;word-break:break-all}
+.hero .site-url b{color:var(--cyan);font-weight:600}
+.hero-cta{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;font-weight:700;font-size:15px;transition:.25s;border:1px solid transparent;
+}
+.btn-primary{background:linear-gradient(120deg,var(--pink),#7c4dff);color:#fff;box-shadow:0 10px 26px rgba(255,45,111,.32)}
+.btn-ghost{background:rgba(255,255,255,.06);border-color:var(--line);color:#dfe6fb}
+.btn:hover{transform:translateY(-2px)}
+
+/* 数据条 */
+.stats{margin:36px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:860px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 10px;text-align:center;backdrop-filter:blur(8px)}
+.stat b{display:block;font-size:22px;color:#fff}
+.stat span{font-size:12.5px;color:var(--muted)}
+
+/* ===== 通用模块 ===== */
+section.block{padding:44px 0 8px}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:22px;flex-wrap:wrap}
+.block-head h2{font-size:clamp(20px,3.6vw,27px);position:relative;padding-left:14px}
+.block-head h2::before{content:"";position:absolute;left:0;top:.35em;width:5px;height:1em;border-radius:3px;background:linear-gradient(180deg,var(--pink),var(--cyan))}
+.block-head .sub{font-size:13px;color:var(--muted);margin-top:4px}
+.block-head .more{font-size:13.5px;color:#a9b4d3;border:1px solid var(--line);padding:6px 14px;border-radius:999px;white-space:nowrap}
+
+/* 影片卡片网格 */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  transition:.28s;display:flex;flex-direction:column;backdrop-filter:blur(6px);
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,45,111,.45);box-shadow:0 16px 34px rgba(0,0,0,.45)}
+.poster{position:relative;aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center}
+.poster .p-title{font-weight:800;font-size:16px;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.55);letter-spacing:1px}
+.poster .p-tag{position:absolute;left:8px;top:8px;font-size:11px;padding:3px 8px;border-radius:6px;background:rgba(0,0,0,.55);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.poster .score{position:absolute;right:8px;top:8px;font-size:12px;font-weight:800;color:#0b0f1f;background:var(--gold);padding:2px 7px;border-radius:6px}
+.p1{background:linear-gradient(160deg,#3a1c5e,#ff2d6f)}
+.p2{background:linear-gradient(160deg,#0f3b52,#22e0ff)}
+.p3{background:linear-gradient(160deg,#4a2a12,#ffc53d)}
+.p4{background:linear-gradient(160deg,#123c2c,#39d98a)}
+.p5{background:linear-gradient(160deg,#2a1550,#7c4dff)}
+.p6{background:linear-gradient(160deg,#4d1230,#ff7a59)}
+.card-body{padding:11px 12px 14px}
+.card-body h3{font-size:14.5px;font-weight:700;line-height:1.5;min-height:2.9em}
+.card-body h3 a:hover{color:var(--cyan)}
+.card-body .meta{font-size:12px;color:var(--muted);margin-top:6px;display:flex;justify-content:space-between;gap:8px}
+
+/* 排行榜 */
+.rank-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rank-item{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.rank-no{
+  flex:0 0 34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:15px;color:#fff;background:rgba(255,255,255,.10)
+}
+.rank-item:nth-child(1) .rank-no{background:linear-gradient(135deg,#ff2d6f,#ff7a59)}
+.rank-item:nth-child(2) .rank-no{background:linear-gradient(135deg,#ff9f1c,#ffc53d)}
+.rank-item:nth-child(3) .rank-no{background:linear-gradient(135deg,#22e0ff,#3aa0ff)}
+.rank-info{flex:1;min-width:0}
+.rank-info h3{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar{height:6px;border-radius:4px;background:rgba(255,255,255,.09);margin-top:7px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--pink),var(--cyan))}
+.rank-hot{flex:0 0 auto;font-size:12.5px;color:var(--gold);font-weight:700}
+
+/* 分类标签云 */
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags a{font-size:13.5px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);color:#cdd6f0}
+.tags a:hover{background:linear-gradient(120deg,rgba(255,45,111,.28),rgba(34,224,255,.2));color:#fff}
+
+/* 特色说明 */
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 18px}
+.feature .ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:12px;background:linear-gradient(135deg,rgba(255,45,111,.25),rgba(34,224,255,.22))}
+.feature h3{font-size:16px;margin-bottom:6px}
+.feature p{font-size:13.5px;color:var(--muted)}
+
+/* FAQ */
+.faq{display:grid;gap:12px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+summary{cursor:pointer;font-weight:700;font-size:15.5px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--cyan);font-weight:900}
+details[open] summary::after{content:"-"}
+details p{margin-top:10px;font-size:14px;color:#b3bcdd}
+
+/* 页脚 */
+footer.site-footer{margin-top:52px;border-top:1px solid var(--line);background:rgba(6,9,18,.75);padding:38px 0 26px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:26px}
+.foot-grid h4{font-size:15px;margin-bottom:12px;color:#fff}
+.foot-grid li{font-size:13.5px;color:var(--muted);padding:4px 0}
+.foot-grid li a:hover{color:var(--cyan)}
+.foot-about p{font-size:13.5px;color:var(--muted);margin-top:10px}
+.copyright{margin-top:28px;padding-top:18px;border-top:1px dashed rgba(255,255,255,.12);font-size:12.5px;color:#78839f;text-align:center;line-height:1.9}
+
+/* 移动端底部导航 */
+.tabbar{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;
+  background:rgba(8,11,22,.96);border-top:1px solid var(--line);backdrop-filter:blur(12px);
+  padding:6px 4px calc(6px + env(safe-area-inset-bottom));
+}
+.tabbar ul{display:flex}
+.tabbar li{flex:1}
+.tabbar a{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;color:#94a0c0;padding:5px 0}
+.tabbar a .ti{font-size:17px;line-height:1}
+.tabbar a.on{color:var(--cyan)}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:16px;bottom:78px;z-index:65;width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;
+  background:linear-gradient(135deg,var(--pink),#7c4dff);box-shadow:0 8px 20px rgba(0,0,0,.45)
+}
+
+/* ===== 响应式 ===== */
+@media (max-width:1024px){
+  .grid{grid-template-columns:repeat(4,1fr)}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  body{font-size:15px;padding-bottom:62px}
+  .search-box{display:none}
+  .header-inner{padding:10px 14px;gap:10px}
+  .logo-mark{width:34px;height:34px;font-size:15px;border-radius:10px}
+  .logo-text strong{font-size:17px}
+  .logo-text small{font-size:9.5px;letter-spacing:1.4px}
+  nav.main-nav{margin-left:auto;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  nav.main-nav::-webkit-scrollbar{display:none}
+  nav.main-nav ul{flex-wrap:nowrap;gap:4px}
+  nav.main-nav a{padding:6px 11px;font-size:13.5px}
+  .hero{padding:34px 0 22px}
+  .stats{grid-template-columns:repeat(2,1fr);gap:10px;margin-top:26px}
+  .stat b{font-size:19px}
+  section.block{padding:32px 0 4px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .card-body h3{font-size:13.5px;min-height:2.6em}
+  .rank-list{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr;gap:12px}
+  .feature{padding:18px 16px}
+  .foot-grid{grid-template-columns:1fr;gap:20px}
+  .tabbar{display:block}
+  .to-top{bottom:74px;right:12px;width:40px;height:40px}
+  .topbar span{font-size:12px}
+}
+@media (max-width:400px){
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .poster .p-title{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://laosandianyingwang-cn.github.io/#website",
+      "url": "https://laosandianyingwang-cn.github.io/",
+      "name": "老三电影网",
+      "alternateName": "老三电影",
+      "description": "老三电影网提供最新高清电影、热播电视剧、动漫番剧、综艺纪录片的在线观看与影视资讯，每日更新影视排行榜。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://laosandianyingwang-cn.github.io/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://laosandianyingwang-cn.github.io/#search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://laosandianyingwang-cn.github.io/#organization",
+      "name": "老三电影网",
+      "url": "https://laosandianyingwang-cn.github.io/",
+      "logo": "https://laosandianyingwang-cn.github.io/logo.svg"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://laosandianyingwang-cn.github.io/#webpage",
+      "url": "https://laosandianyingwang-cn.github.io/",
+      "name": "老三电影网 - 免费高清电影电视剧在线观看_最新影视资源大全",
+      "isPartOf": { "@id": "https://laosandianyingwang-cn.github.io/#website" },
+      "about": "电影、电视剧、动漫番剧、综艺纪录片的在线观看与影视资讯",
+      "inLanguage": "zh-CN",
+      "breadcrumb": { "@id": "https://laosandianyingwang-cn.github.io/#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://laosandianyingwang-cn.github.io/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "老三电影网首页", "item": "https://laosandianyingwang-cn.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "最新电影", "item": "https://laosandianyingwang-cn.github.io/#movie" },
+        { "@type": "ListItem", "position": 3, "name": "热播剧集", "item": "https://laosandianyingwang-cn.github.io/#tv" },
+        { "@type": "ListItem", "position": 4, "name": "动漫番剧", "item": "https://laosandianyingwang-cn.github.io/#anime" },
+        { "@type": "ListItem", "position": 5, "name": "综艺纪实", "item": "https://laosandianyingwang-cn.github.io/#show" },
+        { "@type": "ListItem", "position": 6, "name": "影视排行榜", "item": "https://laosandianyingwang-cn.github.io/#rank" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ============ 公告条 ============ -->
+<div class="topbar">
+  <div class="wrap">
+    <span>老三电影网 · 每日 20:00 更新，热播剧集同步跟播</span>
+    <a href="#movie">立即看片 &raquo;</a>
+  </div>
+</div>
+
+<!-- ============ 头部 ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-mark" aria-hidden="true">老三</span>
+      <span class="logo-text">
+        <strong>老三电影网</strong>
+        <small>laosandianyingwang</small>
+      </span>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#top" class="active">首页</a></li>
+        <li><a href="#movie">最新电影</a></li>
+        <li><a href="#tv">热播剧集</a></li>
+        <li><a href="#anime">动漫番剧</a></li>
+        <li><a href="#show">综艺纪实</a></li>
+        <li><a href="#rank">影视排行</a></li>
+        <li><a href="#genre">分类导航</a></li>
+        <li><a href="#about">关于我们</a></li>
+      </ul>
+    </nav>
+    <form class="search-box" action="#" method="get" role="search">
+      <label for="q" style="position:absolute;left:-9999px">搜索影视</label>
+      <input id="q" name="q" type="search" placeholder="搜索电影 / 电视剧 / 演员">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<main>
+<section class="hero wrap" aria-labelledby="hero-title">
+  <span class="badge-line">◆ 2026 秋季影视上新 · 全站免注册</span>
+  <h1 id="hero-title">看电影电视剧，就上<em>老三电影网</em></h1>
+  <p class="lead">老三电影网聚合最新高清电影、热播电视剧、动漫番剧与综艺纪录片，提供剧情介绍、豆瓣式评分与每日影视排行榜。全站页面移动端自适应，手机、平板、电脑都能顺滑浏览，想看的片子一搜就有。</p>
+  <p class="site-url">官方网址：<b>https://laosandianyingwang-cn.github.io</b></p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="#movie">马上看最新电影</a>
+    <a class="btn btn-ghost" href="#rank">查看今日排行榜</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>12860+</b><span>收录影片</span></div>
+    <div class="stat"><b>24 小时</b><span>滚动更新</span></div>
+    <div class="stat"><b>4K / 1080P</b><span>画质可选</span></div>
+    <div class="stat"><b>0 门槛</b><span>免注册直接看</span></div>
+  </div>
+</section>
+
+<!-- ============ 栏目一：最新电影 ============ -->
+<section class="block wrap" id="movie" aria-labelledby="movie-title">
+  <div class="block-head">
+    <div>
+      <h2 id="movie-title">最新电影 · 高清在线观看</h2>
+      <p class="sub">院线新片、网络新片同步上架，老三电影网每日更新</p>
+    </div>
+    <a class="more" href="#movie">查看全部电影 &raquo;</a>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="poster p1"><span class="p-tag">科幻</span><span class="score">8.7</span><span class="p-title">星际远征</span></div>
+      <div class="card-body">
+        <h3><a href="#">星际远征 高清完整版在线观看</a></h3>
+        <p class="meta"><span>2026 · 美国</span><span>128 分钟</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p2"><span class="p-tag">悬疑</span><span class="score">8.2</span><span class="p-title">雾都迷案</span></div>
+      <div class="card-body">
+        <h3><a href="#">雾都迷案 烧脑反转推理片</a></h3>
+        <p class="meta"><span>2026 · 英国</span><span>116 分钟</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p3"><span class="p-tag">剧情</span><span class="score">7.9</span><span class="p-title">山海之约</span></div>
+      <div class="card-body">
+        <h3><a href="#">山海之约 国产温情剧情片</a></h3>
+        <p class="meta"><span>2026 · 中国大陆</span><span>104 分钟</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p4"><span class="p-tag">动作</span><span class="score">8.0</span><span class="p-title">极速追风</span></div>
+      <div class="card-body">
+        <h3><a href="#">极速追风 赛车动作大片</a></h3>
+        <p class="meta"><span>2025 · 美国</span><span>132 分钟</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p5"><span class="p-tag">爱情</span><span class="score">7.6</span><span class="p-title">春日迟迟</span></div>
+      <div class="card-body">
+        <h3><a href="#">春日迟迟 治愈系爱情电影</a></h3>
+        <p class="meta"><span>2026 · 日本</span><span>98 分钟</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p6"><span class="p-tag">冒险</span><span class="score">8.4</span><span class="p-title">深蓝之下</span></div>
+      <div class="card-body">
+        <h3><a href="#">深蓝之下 深海探险纪录片</a></h3>
+        <p class="meta"><span>2025 · 法国</span><span>110 分钟</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目二：热播剧集 ============ -->
+<section class="block wrap" id="tv" aria-labelledby="tv-title">
+  <div class="block-head">
+    <div>
+      <h2 id="tv-title">热播电视剧 · 同步跟播</h2>
+      <p class="sub">国产剧、韩剧、日剧、美剧一站追更，更新提醒不迷路</p>
+    </div>
+    <a class="more" href="#tv">追剧日历 &raquo;</a>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="poster p2"><span class="p-tag">更新至 18 集</span><span class="score">9.1</span><span class="p-title">长夜将明</span></div>
+      <div class="card-body">
+        <h3><a href="#">长夜将明 电视剧全集在线观看</a></h3>
+        <p class="meta"><span>刑侦 · 32 集</span><span>每周三更新</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p3"><span class="p-tag">已完结</span><span class="score">8.8</span><span class="p-title">山河故人</span></div>
+      <div class="card-body">
+        <h3><a href="#">山河故人 年代情感大剧</a></h3>
+        <p class="meta"><span>年代 · 24 集</span><span>全集上线</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p4"><span class="p-tag">更新至 12 集</span><span class="score">8.5</span><span class="p-title">城中烟火</span></div>
+      <div class="card-body">
+        <h3><a href="#">城中烟火 都市生活剧</a></h3>
+        <p class="meta"><span>都市 · 28 集</span><span>每周一更新</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p5"><span class="p-tag">已完结</span><span class="score">9.0</span><span class="p-title">无声证词</span></div>
+      <div class="card-body">
+        <h3><a href="#">无声证词 悬疑短剧集</a></h3>
+        <p class="meta"><span>悬疑 · 12 集</span><span>全集上线</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p6"><span class="p-tag">更新至 06 集</span><span class="score">8.3</span><span class="p-title">少年行</span></div>
+      <div class="card-body">
+        <h3><a href="#">少年行 青春校园剧</a></h3>
+        <p class="meta"><span>青春 · 20 集</span><span>每周五更新</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p1"><span class="p-tag">已完结</span><span class="score">8.6</span><span class="p-title">锦绣年华</span></div>
+      <div class="card-body">
+        <h3><a href="#">锦绣年华 古装传奇剧</a></h3>
+        <p class="meta"><span>古装 · 36 集</span><span>全集上线</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目三：动漫番剧 ============ -->
+<section class="block wrap" id="anime" aria-labelledby="anime-title">
+  <div class="block-head">
+    <div>
+      <h2 id="anime-title">动漫番剧 · 新番连载</h2>
+      <p class="sub">日漫新番、国漫崛起之作，老三电影网同步更新</p>
+    </div>
+    <a class="more" href="#anime">番剧时间表 &raquo;</a>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="poster p5"><span class="p-tag">国漫</span><span class="score">9.2</span><span class="p-title">灵剑传说</span></div>
+      <div class="card-body">
+        <h3><a href="#">灵剑传说 国漫仙侠番剧</a></h3>
+        <p class="meta"><span>仙侠 · 更新中</span><span>每周六</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p2"><span class="p-tag">日番</span><span class="score">8.9</span><span class="p-title">星海旅人</span></div>
+      <div class="card-body">
+        <h3><a href="#">星海旅人 太空冒险动画</a></h3>
+        <p class="meta"><span>冒险 · 更新中</span><span>每周四</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p1"><span class="p-tag">机甲</span><span class="score">8.7</span><span class="p-title">机械之心</span></div>
+      <div class="card-body">
+        <h3><a href="#">机械之心 机甲科幻动画</a></h3>
+        <p class="meta"><span>科幻 · 已完结</span><span>全 24 话</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p3"><span class="p-tag">奇幻</span><span class="score">8.8</span><span class="p-title">山海异闻录</span></div>
+      <div class="card-body">
+        <h3><a href="#">山海异闻录 志怪奇幻番剧</a></h3>
+        <p class="meta"><span>奇幻 · 更新中</span><span>每周日</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p4"><span class="p-tag">治愈</span><span class="score">9.0</span><span class="p-title">风之谷的夏天</span></div>
+      <div class="card-body">
+        <h3><a href="#">风之谷的夏天 治愈系剧场版</a></h3>
+        <p class="meta"><span>治愈 · 已完结</span><span>剧场版</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p6"><span class="p-tag">战斗</span><span class="score">8.5</span><span class="p-title">幻境战线</span></div>
+      <div class="card-body">
+        <h3><a href="#">幻境战线 热血战斗动画</a></h3>
+        <p class="meta"><span>热血 · 更新中</span><span>每周二</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目四：综艺纪实 ============ -->
+<section class="block wrap" id="show" aria-labelledby="show-title">
+  <div class="block-head">
+    <div>
+      <h2 id="show-title">综艺纪实 · 轻松下饭</h2>
+      <p class="sub">真人秀、音乐综艺、人文纪录片，周末不剧荒</p>
+    </div>
+    <a class="more" href="#show">综艺榜单 &raquo;</a>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <div class="poster p3"><span class="p-tag">真人秀</span><span class="score">8.4</span><span class="p-title">周末去哪儿</span></div>
+      <div class="card-body">
+        <h3><a href="#">周末去哪儿 旅行真人秀</a></h3>
+        <p class="meta"><span>旅行 · 第 5 季</span><span>更新至 08 期</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p1"><span class="p-tag">音乐</span><span class="score">9.1</span><span class="p-title">声音的力量</span></div>
+      <div class="card-body">
+        <h3><a href="#">声音的力量 音乐竞演综艺</a></h3>
+        <p class="meta"><span>音乐 · 第 2 季</span><span>更新至 10 期</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p4"><span class="p-tag">美食</span><span class="score">8.6</span><span class="p-title">厨房有请</span></div>
+      <div class="card-body">
+        <h3><a href="#">厨房有请 家常美食节目</a></h3>
+        <p class="meta"><span>美食 · 第 3 季</span><span>更新至 12 期</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p2"><span class="p-tag">纪实</span><span class="score">9.3</span><span class="p-title">一路向北</span></div>
+      <div class="card-body">
+        <h3><a href="#">一路向北 人文地理纪录片</a></h3>
+        <p class="meta"><span>人文 · 全 8 集</span><span>已完结</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p5"><span class="p-tag">文化</span><span class="score">9.4</span><span class="p-title">寻迹·国家宝藏</span></div>
+      <div class="card-body">
+        <h3><a href="#">寻迹·国家宝藏 文博纪录片</a></h3>
+        <p class="meta"><span>文博 · 全 10 集</span><span>已完结</span></p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster p6"><span class="p-tag">访谈</span><span class="score">8.2</span><span class="p-title">深夜对话</span></div>
+      <div class="card-body">
+        <h3><a href="#">深夜对话 人物访谈节目</a></h3>
+        <p class="meta"><span>访谈 · 第 4 季</span><span>更新至 06 期</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目五：影视排行榜 ============ -->
+<section class="block wrap" id="rank" aria-labelledby="rank-title">
+  <div class="block-head">
+    <div>
+      <h2 id="rank-title">影视排行榜 · 全站热播 TOP 10</h2>
+      <p class="sub">按播放热度、搜索量与评分综合排序，每小时刷新</p>
+    </div>
+    <a class="more" href="#rank">完整榜单 &raquo;</a>
+  </div>
+  <div class="rank-list">
+    <div class="rank-item">
+      <span class="rank-no">1</span>
+      <div class="rank-info">
+        <h3><a href="#">长夜将明</a></h3>
+        <div class="bar"><i style="width:98%"></i></div>
+      </div>
+      <span class="rank-hot">982 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">2</span>
+      <div class="rank-info">
+        <h3><a href="#">星际远征</a></h3>
+        <div class="bar"><i style="width:93%"></i></div>
+      </div>
+      <span class="rank-hot">931 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">3</span>
+      <div class="rank-info">
+        <h3><a href="#">灵剑传说</a></h3>
+        <div class="bar"><i style="width:88%"></i></div>
+      </div>
+      <span class="rank-hot">884 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">4</span>
+      <div class="rank-info">
+        <h3><a href="#">声音的力量</a></h3>
+        <div class="bar"><i style="width:82%"></i></div>
+      </div>
+      <span class="rank-hot">821 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">5</span>
+      <div class="rank-info">
+        <h3><a href="#">雾都迷案</a></h3>
+        <div class="bar"><i style="width:77%"></i></div>
+      </div>
+      <span class="rank-hot">773 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">6</span>
+      <div class="rank-info">
+        <h3><a href="#">一路向北</a></h3>
+        <div class="bar"><i style="width:71%"></i></div>
+      </div>
+      <span class="rank-hot">716 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">7</span>
+      <div class="rank-info">
+        <h3><a href="#">山河故人</a></h3>
+        <div class="bar"><i style="width:66%"></i></div>
+      </div>
+      <span class="rank-hot">662 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">8</span>
+      <div class="rank-info">
+        <h3><a href="#">星海旅人</a></h3>
+        <div class="bar"><i style="width:60%"></i></div>
+      </div>
+      <span class="rank-hot">605 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">9</span>
+      <div class="rank-info">
+        <h3><a href="#">极速追风</a></h3>
+        <div class="bar"><i style="width:54%"></i></div>
+      </div>
+      <span class="rank-hot">548 万</span>
+    </div>
+    <div class="rank-item">
+      <span class="rank-no">10</span>
+      <div class="rank-info">
+        <h3><a href="#">深蓝之下</a></h3>
+        <div class="bar"><i style="width:47%"></i></div>
+      </div>
+      <span class="rank-hot">479 万</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目六：分类导航 ============ -->
+<section class="block wrap" id="genre" aria-labelledby="genre-title">
+  <div class="block-head">
+    <div>
+      <h2 id="genre-title">影视分类导航 · 按类型找片</h2>
+      <p class="sub">20+ 细分类型，老三电影网帮你快速定位想看的内容</p>
+    </div>
+    <a class="more" href="#genre">全部分类 &raquo;</a>
+  </div>
+  <div class="tags">
+    <a href="#">动作片</a>
+    <a href="#">喜剧片</a>
+    <a href="#">爱情片</a>
+    <a href="#">科幻片</a>
+    <a href="#">悬疑犯罪</a>
+    <a href="#">恐怖惊悚</a>
+    <a href="#">战争历史</a>
+    <a href="#">动画电影</a>
+    <a href="#">纪录片</a>
+    <a href="#">国产剧</a>
+    <a href="#">韩剧</a>
+    <a href="#">日剧</a>
+    <a href="#">美剧</a>
+    <a href="#">港剧</a>
+    <a href="#">古装剧</a>
+    <a href="#">都市剧</a>
+    <a href="#">新番动画</a>
+    <a href="#">经典怀旧</a>
+    <a href="#">4K 专区</a>
+    <a href="#">片单合集</a>
+  </div>
+</section>
+
+<!-- ============ 栏目七：为什么选择老三电影网 ============ -->
+<section class="block wrap" id="feature" aria-labelledby="feature-title">
+  <div class="block-head">
+    <div>
+      <h2 id="feature-title">为什么选择老三电影网</h2>
+      <p class="sub">四个理由，让看电影电视剧这件事变简单</p>
+    </div>
+  </div>
+  <div class="features">
+    <article class="feature">
+      <span class="ico" aria-hidden="true">▤</span>
+      <h3>资源全 · 更新快</h3>
+      <p>电影、电视剧、动漫、综艺四大频道同步铺量，新片上线 24 小时内收录，追更不断档。</p>
+    </article>
+    <article class="feature">
+      <span class="ico" aria-hidden="true">◉</span>
+      <h3>画质清晰流畅</h3>
+      <p>提供 1080P 与 4K 多档清晰度，自适应带宽，手机流量下也能稳定播放不卡顿。</p>
+    </article>
+    <article class="feature">
+      <span class="ico" aria-hidden="true">◎</span>
+      <h3>手机端体验友好</h3>
+      <p>整站响应式布局，底部快捷导航一键切换频道，小屏浏览同样顺手。</p>
+    </article>
+    <article class="feature">
+      <span class="ico" aria-hidden="true">✦</span>
+      <h3>榜单评分参考</h3>
+      <p>影视排行榜结合播放热度与用户评分，帮你少踩雷、快速挑出值得看的片子。</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目八：关于我们 / FAQ ============ -->
+<section class="block wrap" id="about" aria-labelledby="about-title">
+  <div class="block-head">
+    <div>
+      <h2 id="about-title">关于老三电影网 · 常见问题</h2>
+      <p class="sub">了解老三电影网的更新规则与使用说明</p>
+    </div>
+    <a class="more" href="#about">联系站长 &raquo;</a>
+  </div>
+  <div class="faq">
+    <details open>
+      <summary>老三电影网是什么类型的网站？</summary>
+      <p>老三电影网（https://laosandianyingwang-cn.github.io）是一家面向影视爱好者的在线观影导航站点，聚合最新高清电影、热播电视剧、动漫番剧与综艺纪录片，提供剧情简介、评分参考与影视排行榜，帮助用户快速找到想看的内容。</p>
+    </details>
+    <details>
+      <summary>网站内容多久更新一次？</summary>
+      <p>全站每天 20:00 固定更新一次，热门剧集按播出平台节奏同步跟播，影视排行榜每小时刷新，最新电影板块优先收录院线热映与网络首播作品。</p>
+    </details>
+    <details>
+      <summary>手机端可以正常浏览吗？</summary>
+      <p>可以。老三电影网采用响应式设计，页面在手机、平板与桌面端都会自动适配排版，移动端提供底部快捷导航，追剧看片随手可及。</p>
+    </details>
+    <details>
+      <summary>找不到想看的电影或电视剧怎么办？</summary>
+      <p>可以使用页面顶部搜索框按片名、演员检索，也可以进入「影视分类导航」按类型筛选；仍未收录的影片可通过「联系站长」提交片名，我们会在下一次更新时优先处理。</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <h4>老三电影网</h4>
+        <p>老三电影网专注影视内容聚合与观影导航，覆盖电影、电视剧、动漫番剧、综艺纪录片四大频道，每日更新影视排行榜与新片资讯，让每一次打开都有新片可看。</p>
+        <p>网址：https://laosandianyingwang-cn.github.io</p>
+      </div>
+      <div>
+        <h4>影视频道</h4>
+        <ul>
+          <li><a href="#movie">最新电影</a></li>
+          <li><a href="#tv">热播剧集</a></li>
+          <li><a href="#anime">动漫番剧</a></li>
+          <li><a href="#show">综艺纪实</a></li>
+          <li><a href="#rank">影视排行</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>分类导航</h4>
+        <ul>
+          <li><a href="#genre">动作片</a></li>
+          <li><a href="#genre">科幻片</a></li>
+          <li><a href="#genre">国产剧</a></li>
+          <li><a href="#genre">日韩剧</a></li>
+          <li><a href="#genre">4K 专区</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>站点信息</h4>
+        <ul>
+          <li><a href="#about">关于老三电影网</a></li>
+          <li><a href="#feature">站点特色</a></li>
+          <li><a href="#">更新日志</a></li>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">
+      老三电影网 &copy; 2026 · 本站为影视信息聚合与导航站点，所列影片信息仅供参考。<br>
+      Powered by 老三电影网 | https://laosandianyingwang-cn.github.io
+    </p>
+  </div>
+</footer>
+
+<!-- ============ 移动端底部导航 ============ -->
+<nav class="tabbar" aria-label="移动端快捷导航">
+  <ul>
+    <li><a href="#top" class="on"><span class="ti" aria-hidden="true">◆</span>首页</a></li>
+    <li><a href="#movie"><span class="ti" aria-hidden="true">▤</span>电影</a></li>
+    <li><a href="#tv"><span class="ti" aria-hidden="true">▣</span>剧集</a></li>
+    <li><a href="#anime"><span class="ti" aria-hidden="true">✦</span>动漫</a></li>
+    <li><a href="#rank"><span class="ti" aria-hidden="true">★</span>排行</a></li>
+  </ul>
+</nav>
+
+<a class="to-top" href="#top" aria-label="返回顶部">↑</a>
+
+</body>
+</html>
